@@ -1,38 +1,230 @@
-.App {
+/* -------------General---------------- */
+body {
+  font-size: 100%;
+  margin: 0;
+}
+
+.normal-text {
+  font-size: 100%;
+  font-family: "El Messiri";
+  color: #888888 !important;
+}
+
+.heading-text {
+  font-size: 200%;
+  font-family: "El Messiri";
+  color: black !important;
+  font-weight: bold;
+}
+
+.section {
+  width: 100%;
+  height: 90vh;
+  padding-top: 10vh;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* -------------Nav bar---------------- */
+
+#menubar {
+  width: 99%;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  padding: 1%;
+}
+
+#menubar .nav-item {
+  display: inline;
+}
+
+.nav-item a {
+  padding: 0 2%;
+  text-decoration: none;
+  float: right;
+  color: #7A7A7A !important;
+}
+
+.menu-logo {
+  display: inline;
+}
+
+.menu-logo .image {
+  width: 80px;
+  height: 40px;
+  background-image: url(./design/nav-logo.png);
+  display: inline-block;
+  padding: 0 2%;
+}
+
+/* -------------Home----------------  */
+
+#home-section {
+  background-size: contain;
+  background-image: url(./design/home-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 0;
+}
+
+.home-title {
+  width: fit-content;
+  position: relative;
+  top: 30%;
+  left: 60%;
+}
+
+
+/* -------------About----------------  */
+
+#about-title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-sub-sections {
+  height: 100%;
+  padding: 0 5%;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-sub-img {
+  width: 50%;
+  height: 120%;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about-sub-text {
+  width: 50%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+#about-1 {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#about-1 .about-sub-img {
+  background-image: url(./design/left-graphic.png);
+}
+
+#about-2 {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+#about-2 .about-sub-img {
+  background-image: url(./design/right-graphic.png);
+  float: right;
+}
+
+#about-2 .about-sub-text {
+  text-align: right;
+}
+/* -------------Contact----------------  */
+
+#contact-title {
+  text-align: center;
+}
+
+#contact-sub-sections {
+  width: 30%;
+  position: relative;
+  left: 35%;
+  padding: 5% 5%;
+}
+
+#contact-sub-sections p {
+  position: relative;
+  top: 25%;
+  display: inline-block;
+  padding: 0 10%;
+  margin: 0;
+}
+
+#contact-phone {
+  padding: 10%;
+}
+
+#contact-email {
+  padding: 10%;
+}
+
+#contact-location {
+  padding: 10%;
+}
+
+#contact-phone .image {
+  background-image: url(./design/icon_phone.png);
+}
+
+#contact-email .image {
+  background-image: url(./design/icon_mail.png);
+}
+
+#contact-location .image {
+  background-image: url(./design/icon_location.png);
+}
+
+#contact-phone #contact-email #contact-location {
+  position: relative;
+}
+
+#contact-sub-sections .image {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+/* -------------Footer----------------  */
+
+#footer {
+  background-color: #5D8CFF;
+  position: relative;
+  bottom: 0;
+  padding: 2% 20%;
+}
+
+#footer div {
+  color: white !important;
+}
+
+#logo-footer {
+  display: inline-block;
+}
+
+#logo-footer .image {
+  width: 200px;
+  height: 100px;
+  background-image: url(./design/logo-footer.png);
+}
+
+#footer-copyright {
+  text-align: center;
+}
+
+#footer-links {
+  display: inline-block;
+  padding: 2% 0 2% 50%;
+}
+
+#footer-links p {
+  text-decoration: underline;
+}
+
+#footer-links a {
+  display: block;
+  text-decoration: none;
+  color: white !important;
 }
