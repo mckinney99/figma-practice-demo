@@ -21,6 +21,8 @@ body {
   width: 100%;
   height: 90vh;
   padding-top: 10vh;
+  justify-content: space-between;
+  overflow-y: scroll;
 }
 
 .image {
@@ -76,12 +78,20 @@ body {
 }
 
 .home-title {
-  width: fit-content;
-  position: relative;
   top: 30%;
-  left: 60%;
+  padding: 100px 100px;
 }
 
+#home-section {
+  display: flex;
+}
+
+@media (min-width: 821px) {
+  .home-title {
+    /* margin-left: 400px; */
+    padding: 200px 200px;
+  }
+}
 
 /* -------------About----------------  */
 
